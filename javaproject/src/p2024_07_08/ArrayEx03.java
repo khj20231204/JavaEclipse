@@ -1,23 +1,29 @@
 package p2024_07_08;
 
+import java.util.Scanner;
+
 public class ArrayEx03 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int[] score = {83, 90, 87};
+		int[] s = new int[3]; //heap영역 안에 저장공간 3개를 생성
 		
-		int sum = 0;
-		for(int i= 0 ; i<score.length ; i++) {
-			sum += score[i];
+		System.out.println("3과목 점수를 입력하시오:");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int sum = 0; //초기화를 하지 않으면 
+		
+		for(int i=0 ; i<s.length ; i++) {
+			s[i] = sc.nextInt();
+			sum += s[i]; //여기서 오류 발생
 		}
 		
+		double avg = sum/3.0;
 		System.out.println("총점:"+sum);
-		
-		double avg = (double)sum / score.length;
-		System.out.println("평균:"+avg);
-		
-		System.out.printf("%.2f", avg);
+		System.out.printf("평균:%.2f",avg);
 	}
 
 }
+
