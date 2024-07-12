@@ -6,6 +6,7 @@ public class StringBufferTest {
 		// TODO Auto-generated method stub
 		
 		StringBuffer sb1 = new StringBuffer("gemini");
+		System.out.println(sb1);
 		System.out.println("sb1.length():" + sb1.length()); //6
 		System.out.println("sb1.capacity():" + sb1.capacity()); //22
 		
