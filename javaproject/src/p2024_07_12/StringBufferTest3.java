@@ -13,6 +13,15 @@ public class StringBufferTest3 {
 		
 		sb1.insert(0, 1004 +" ");
 		System.out.println(sb1);
+		
+		StringBuffer sb2 = new StringBuffer("abcde");
+		System.out.println(sb2); //abcde
+		
+		sb2.deleteCharAt(3);
+		System.out.println(sb2); //abce
+		
+		sb2.delete(2, 3);
+		System.out.println(sb2); //abe
 	}
 
 }
