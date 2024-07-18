@@ -19,8 +19,6 @@ public class WrapperEx1 {
 		String s = "20";
 		Integer num02 = new Integer(s); //박싱
 		int n02 = num02.intValue();		//언박싱
-		
-		
 	}
 
 }
