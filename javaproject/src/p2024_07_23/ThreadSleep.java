@@ -22,5 +22,4 @@ public class ThreadSleep implements Runnable {
 		first.start();
 		second.start();
 	}
-
 }
