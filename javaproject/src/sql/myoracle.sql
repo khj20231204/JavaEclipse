@@ -5,7 +5,7 @@ create table customer (
 	tel varchar2(20)
 );
 
-
+delete from customer;
 
 select * from customer;
 

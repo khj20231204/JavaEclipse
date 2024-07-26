@@ -25,6 +25,5 @@ public class HomeWork {
 			System.out.println("윤년이 아님");
 			System.exit(1);
 		}
-		
 	}
 }
